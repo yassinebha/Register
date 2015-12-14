@@ -293,7 +293,7 @@ change_blending_weights(UI_struct *ui_info,
     if (merge_method == BLEND_VOLUMES)
     {
         VIO_Real value = IF_get_merged_volume_opacity(0);
-        value += 0.01 * direction;
+        value += 0.10 * direction;
         if (value < 0.0)
             value = 0.0;
         if (value > 1.0)
